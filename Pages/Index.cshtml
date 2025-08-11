@@ -1,0 +1,30 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home Page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1>My Favorite Song Right Now</h1>
+        </header>
+        <section class="video-wrapper">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/VP-EGVhFJwc?si=RjumZJKB_FCVeR_5"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <button id="animateBtn" aria-label="Animate the box">Animate Me? Click to see!</button>
+        <div id="box"></div>
+    </main>
+    <script src="~/js/site.js" defer></script>
+</body>
+</html>
